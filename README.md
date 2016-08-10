@@ -1,2 +1,2 @@
-# houseofpeking
-For development usage
+# House of Peking
+For development usage,
