@@ -1,0 +1,479 @@
+body {
+    background: black;
+}
+
+#main h2, #main h5 {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+#top {
+    background-color: black;
+}
+
+#logo {
+    height: 150px;
+    width: auto;
+    
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+#navigationmenu li {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;   
+}
+
+#navigationmenu a {
+    /*    color: white;    */
+}
+
+/****----- Middle Part -----****/
+#middle {
+    padding: 20xp;    
+}
+
+/****----- Sidebar Part -----****/
+#sidenav {
+    box-sizing: border-box;
+}
+
+#side-wrap {
+    background-color: #1e1e1e;
+    padding: 15px;
+}
+
+#side-wrap .panel {
+    border-color: #656565;
+    border-radius: 0px;
+}
+
+#side-wrap .panel-heading {
+    background-color: #1e1e1e;
+    text-align: center;
+    border-radius: 0;
+    border-bottom-color: #656565;
+    color: #EAEAEA;
+    
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.panel-body {
+    background-color: #1e1e1e;
+}
+
+.panel-body > p {
+    color: #EAEAEA;
+    margin: 0;
+    font-family: Open Sans;
+    font-size: 1.2em;
+    line-height: 1.1;
+}
+
+.sidebar-nav .navbar {
+    border-radius: 0;
+    border-color: #656565;
+}
+
+.sidebar-nav li {
+    background-color: #1e1e1e;
+    border-bottom-color: #656565;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: cyan;
+}
+
+#featured {
+    margin: 10px auto;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/****----- Main Section -----****/
+#main {
+/*    background-color: #1e1e1e;*/
+}
+
+#main .container {
+    background-color: #1e1e1e;
+}
+
+.list-group-item-heading h1 {
+    color: #fff;
+    font: 300 48px/48px "Ubuntu", sans-serif;
+}
+
+.list-group-item-heading h1 small {
+    color: #b69d6a;
+    font-style: italic;
+    font-size: 0.35em;
+    text-transform: capitalize;
+}
+
+.list-group li {
+/*    color: white;*/
+    font: 300 24px/36px "Ubuntu", sans-serif;
+/*    text-transform: uppercase;*/
+/*    font-family: Delius,handwriting;*/
+    background-color: #1e1e1e;
+}
+
+.list-group-item {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    width: 100%;
+}
+
+.item-row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+}
+
+.item-row span:first-child{
+    color: azure;
+    order: 0;
+}
+
+.item-row span:first-child small {
+    color: darkgray;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.item-row span+span {
+    color: rgb(229, 146, 0);
+    margin-left: auto;
+    font-family: "Ubuntu", sans-serif;
+    order: 1;
+}
+
+.list-group-item .subscript {
+    color: #888888;
+    font-size: .70em;
+}
+
+/****----- Map Section -----****/
+#my-map {
+    height: 300px;
+    width: auto;
+}
+
+/****----- Footer Section -----****/
+#pageBottom {
+/*    border: 1px solid white;*/
+    color: white;
+    font-size: 14px;
+    padding-left: 0px;
+/*    background-color: #a88462;*/
+}
+
+/****----- Feature Section -----****/
+.return-top {
+    position: fixed;
+    right: 2.5%;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    display: none;
+
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+
+    padding-bottom: 5px;
+    border-radius: 6px;
+    font-size: 2.5em;
+}
+
+.return-top:hover {
+    background-color: aqua;
+    text-decoration-style: none;
+}
+
+.return-top *{
+    text-decoration-style: none;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    
+    #nav-wrap {
+        z-index: 999;
+        background-color: black;
+    }
+    
+    #navigationmenu {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #656565;
+    }
+    
+    .fixed {
+        border: 1px solid white;
+        border-top: none;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #middle {
+        display: -webkit-flex;
+        box-sizing: border-box;
+    }
+    
+    #sidenav {
+        padding-top: 20px;
+    }
+    
+    #sidenav {
+        height: auto;
+        margin-right: 15px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    #side-wrap {
+        width: auto;
+        height: 100%;
+    }
+    
+
+    
+    #side-hour {
+        width: 100%;
+    }
+    
+    #top {
+        display: flex;
+        display: -webkit-flex;
+    }
+    
+    #nav-wrap {
+        align-self: center;
+        -webkit-align-self: center;
+        display: flex;
+        display: -webkit-flex;
+    }
+    
+    #nav-wrap ul {
+        display: -webkit-flex;
+        -webkit-flex-flow: row
+        -webkit-justify-content: space-around;
+    }
+    
+    #featured {
+        padding: 25px;
+        background-color: #1e1e1e;
+    }
+    
+    #categories > li > a {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    #main .container {
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-bottom: 100px;    
+        padding-left: 50px;    
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    #main ul {
+        padding-top: 40px;
+        overflow-x: hidden;
+    }
+    
+    .list-group-item-heading h1 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e69e00;
+/*        border-bottom: 1px solid #b69d6a;*/
+
+    }
+    
+    #main li {
+        width: auto;
+        border: none;
+        font-size: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .list-group-item-heading {
+        
+    }
+    
+    .list-group-item-heading h1 {
+        
+    }
+    
+    /* Menu Dot Leader Control */
+    .item-row:before{
+        color: rgba(178, 177, 177, 1);   
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content:
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . ";
+    }
+
+    .item-row span:first-child {
+        font-size: 1.2em;
+        padding-right: 0.33em;
+        background: #1e1e1e;
+/*        text-transform: uppercase;*/
+    }
+    
+    .item-row span + span {
+        font-size: 1.1em;
+        padding-left: 0.33em;
+        background: #1e1e1e;
+    }
+    
+    .list-group-item .subscript {
+/*        display: inline-block;*/
+        padding-top: 0;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+    
+    .return-top {
+        position: fixed;
+        right: 2.5%;
+        bottom: 5%;
+        width: 40px;
+        height: 40px;
+        background-color: #cccccc;
+        display: none;
+        
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        
+        padding-bottom: 5px;
+        border-radius: 6px;
+        font-size: 2.5em;
+    }
+    
+    .return-top:hover {
+        background-color: aqua;
+        text-decoration-style: none;
+    }
+    
+    .return-top *{
+        text-decoration-style: none;
+    }
+    
+    #pageBottom {
+        margin-left: -15px;
+    }
+}
+
+
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #top {
+        display: -webkit-flex;
+        -webkit-flex-flow: column;
+    }
+
+    #nav-wrap {
+        -webkit-align-self: center;
+    }
+    
+    #main {
+        padding-left: 0px;
+    }
+    #sidenav {
+        padding-top: 15px;
+        padding-left: 0px;
+        padding-right: 0px;    
+    }
+    
+    #pageBottom {
+        margin-left: -15px;
+    }
+}
+
+
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+    
+    #navigationmenu .navbar-nav {
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        -webkit-justify-content: center;
+    }
+    
+    #main {
+        padding-left: 0px;
+    }
+    
+    #sidenav {
+        padding-left: 0;
+    }
+    
+    .sidebar-nav {
+        margin: 15px auto;
+    }
+    
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
