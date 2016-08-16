@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <title>Houes of Peking</title>
 </head>
 
@@ -29,7 +30,7 @@
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Coupon</a></li>
+                            <li><a href="coupon.html">Coupon</a></li>
                             <li><a href="#">Gift Card</a></li>
                         </ul>
                     </nav>
@@ -40,12 +41,22 @@
         <div class="row" id="middle">
             <div class="col-lg-3" id="sidenav">
                 <div class="container" id="side-wrap">
+                    <div class="panel panel-primary text-center side-description">
+                        <br>
+                        <br>
+                        <p id="about-us">House of Peking</p>
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <br>
+                        <br>
+                    </div>
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             Openning Hour
                         </div>
                         <div class="panel-body text-center" id="side-hour-body">
-<!--
+                            <!--
                             <p>Monday Closed</p>
                             <p>Tuesday - Thursday</p>
                             <p>11:00 a.m - 9:00 p.m.</p>
@@ -59,6 +70,7 @@
                             <p>Sun 2:30pm-9pm</p>
                         </div>
                     </div>
+
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             Contact
@@ -66,63 +78,93 @@
                         <div class="panel-body text-center">
                             <p>846 Sheridan Road</p>
                             <p>Highwood, IL 60040</p>
+                            <br>
                             <p>Phone: &nbsp(847) - 432 - 8117</p>
                             <p>Email: houseofpeking@gmail.com</p>
                         </div>
                     </div>
-<!--
+                    <hr>
+                    <div class="side-bar-bottom">
+                        <p class="text-center">846 Sheridan Road
+                            <br>Highwood, IL 60040</p>
+                        <ul class="text-center">
+                            <li><a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a></li>
+                            <li><a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a></li>
+                            <li><a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a></li>
+                            <li><a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a></li>
+                        </ul>
+                        <p class="copy-right text-center">&copy; 2016 House of Peking.
+                            <br>All Rights Reserved.</p>
+                    </div>
+                    <!--
                     <div class="gh-button-ifrm" data-customer-id="334640" data-restaurant-name="House of Peking" data-button-type="branded" data-button-color="red" data-button-size="large" data-env="prod" data-url="house-of-peking-846-sheridan-rd-highwood" data-tracking-id="42026" data-restaurant-address="846 Sheridan Rd, Highwood IL, 60040" data-version="1.0" data-link-type="gh" align="center"></div>
                     <script src="https://gh-prod-nitrosites.s3.amazonaws.com/scripts/iframeLib.min.js"></script>
 -->
-
                 </div>
             </div>
             <div class="col-lg-9" id="main">
-                <div class="carousel slide" data-ride="carousel" id="featured">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel slide" data-ride="carousel" id="featured">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#featured" data-slide-to="0"></li>
+                                <li data-target="#featured" data-slide-to="1"></li>
+                                <li data-target="#featured" data-slide-to="2"></li>
+                            </ol>
 
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#featured" data-slide-to="0"></li>
-                        <li data-target="#featured" data-slide-to="1"></li>
-                        <li data-target="#featured" data-slide-to="2"></li>
-                    </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="img/1.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="img/2.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="img/3.jpg">
+                                </div>
+                            </div>
+                            <!-- carousel inner -->
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img/1.jpg">
+
+                            <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
                         </div>
-                        <div class="item">
-                            <img src="img/2.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/3.jpg">
+                        <!-- carousel -->
+                    </div>
+                    <!-- row -->
+                    <div class="row feedback">
+                        <hr>
+                        <h2>Our Feedback</h2>
+                        <div class="feedback-group">
+                            <div class="col-lg-3 feedback-item">
+                                <p>Great Chinese</p>
+                                <p>Great Chinese: I have come to this Chinese restaurant for many years and I find it the best so far. I have tried other Chinese restaurants but they don't stand up to this one. Try it and I guarantee you will love it!</p>
+                                <p>-Customer</p>
+                                <p>Review from Yahoo Local</p>
+                            </div>
+                            <div class="col-lg-3 feedback-item">
+                                <p>Excellent Soup and Food in General</p>
+                                <p>This restaurant is small and family run. It does however have excellent food. The egg drop soup is very good and most of their lunch specials are excellent. This place is relatively inexpensive and parking is out in front. The egg rolls and appetizers are very good. They are located in Highwood, next to Fort Sheridan on a strip mall.</p>
+                                <p>-Customer</p>
+                                <p>Review from Judy's Book</p>
+                            </div>
+                            <div class="col-lg-3 feedback-item">
+                                <p>The Best!!</p>
+                                <p>A true diamond in the rough. Nestles away in a small strip mall, the food, service and value is unsurpassed. Their hot and sour soup is the best I have ever tasted. Whether it's soup, appetizers or the main course, you can not go wrong with the food here.</p>
+                                <p>-Customer from Highland Park</p>
+                                <p>Review from Metromix Chicago</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- carousel inner -->
-
-                    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
                 </div>
-                <!-- carousel -->
-                <!--
-                <h4><small>RECENT POSTS</small></h4>
-                <hr>
-                <h2>Officially Blogging</h2>
-                <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-                <h5><span class="label label-success">Lorem</span></h5>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <hr>
--->
+                <!-- container -->
             </div>
+            <!-- main -->
         </div>
-
-        <footer class="container text-center" id="pageBottom">
-            &copy; 2016 House of Peking. All Rights Reserved. 
-        </footer>
     </div>
 
     <script src="js/jquery-2.1.4.min.js"></script>

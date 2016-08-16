@@ -10,7 +10,18 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     list-style: none;
     text-decoration: none;
+    color: white;
 }
+
+hr {
+    border-color: #656565;
+}
+
+/*
+a:focus, a:hover {
+    text-decoration: none;
+}
+*/
 
 #top {
     background-color: black;
@@ -66,11 +77,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.panel-body {
+.panel-body, .panel {
     background-color: #1e1e1e;
 }
 
-.panel-body > p {
+.panel-body > p, .panel > p {
     color: #EAEAEA;
     margin: 0;
     font-family: Open Sans;
@@ -93,20 +104,114 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: cyan;
+/*    color: rgb(229, 146, 0);*/
+    color: #888888;
 }
 
+/****---- For Lunch Special ----****/
+.navbar-default .navbar-nav>li:first-child {
+    background-color: yellow;
+}
+
+.navbar-default .navbar-nav>li:first-child>a {
+    color: black;
+}
+
+.side-description {
+    padding: 10px;
+    font: normal normal normal 13px/1.4em 'Open Sans',sans-serif
+}
+
+#about-us {
+    font: normal normal normal 18px/1.4em 'Open Sans',sans-serif;
+}
+
+.side-bar-bottom > p:first-child {
+    color: #EAEAEA;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+}
+
+.side-bar-bottom ul {
+    padding-left: 0;
+}
+
+.side-bar-bottom ul li {
+    display: inline;
+}
+
+.side-bar-bottom ul li a {
+    color: white;
+}
+
+#social-fb {
+    color: #4d6bab;
+}
+#social-tw {
+    color: #4099FF;
+}
+#social-gp {
+    color: #d34836;
+}
+#social-em {
+    color: #f39c12;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: #f39c12;
+}
+
+.side-bar-bottom > p:last-child{
+    color: #999999;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+}
+
+/****----- Carousel -----****/
 #featured {
     margin: 10px auto;
 }
 
-.carousel-inner img {
+#featured .carousel-inner img {
     margin: 0 auto;
     width: 100%;
     height: auto;
 }
 
+#contact-carousel {
+    overflow: hidden;
+}
 
+#contact-carousel .carousel-inner img {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
 
 /****----- Main Section -----****/
 #main {
@@ -115,6 +220,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #main .container {
     background-color: #1e1e1e;
+}
+
+.list-group-item-heading {
+    list-style: none;
 }
 
 .list-group-item-heading h1 {
@@ -170,6 +279,36 @@ h1, h2, h3, h4, h5, h6 {
     font-size: .70em;
 }
 
+#lunch-special > li:first-child > p {
+    color: #888888;
+}
+
+#lunch-special > li+li {
+    border: 2px dashed rgb(255, 255, 128);
+}
+
+.extra {
+    color: rgb(128, 128, 128);
+    list-style: none;
+}
+
+.extra .price {
+    color: rgb(229, 146, 0);
+}
+
+/****----- Feedback Section -----****/
+.feedback-item p {
+    color: #EAEAEA;
+}
+
+.feedback-item p:first-child {
+    font: normal bold normal 20px/1.4em 'Open Sans',sans-serif;
+}
+
+.feedback-item p+p {
+    font: normal normal normal 16px/1.4em 'Open Sans',sans-serif;
+}
+
 /****----- Map Section -----****/
 #my-map {
     height: 300px;
@@ -205,13 +344,34 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5em;
 }
 
-.return-top:hover {
-    background-color: aqua;
-    text-decoration-style: none;
+.return-top:focus, .return-top:hover {
+    text-decoration: none;
 }
 
-.return-top *{
-    text-decoration-style: none;
+/****----- Feature Section -----****/
+.form-control {
+    border: none;
+    background-color: rgba(101, 101, 101, 1);
+}
+
+.form-control:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+form > .btn, form > .btn:hover {
+    color: azure;
+    background-color: rgba(51, 51, 51, 1);
+}
+
+
+form > .btn:active:focus, form > .btn:focus{
+    outline: none;
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -256,11 +416,13 @@ h1, h2, h3, h4, h5, h6 {
         width: auto;
         height: 100%;
     }
-    
 
-    
     #side-hour {
         width: 100%;
+    }
+    
+    #side-wrap > .side-description {
+        border: none;
     }
     
     #top {
@@ -282,8 +444,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     #featured {
-        padding: 25px;
-        background-color: #1e1e1e;
+        box-sizing: border-box;
+        margin: 15px;
+    }
+    
+    #contact-carousel {
+        box-sizing: border-box;
+        height: 300px;
     }
     
     #categories > li > a {
@@ -291,6 +458,11 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 3px;
     }
     
+    #categories > li > a:focus {
+        color: #888888;
+    }
+    
+    /****----- Main Section -----****/
     #main .container {
         padding-top: 20px;
         padding-right: 50px;
@@ -298,6 +470,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 50px;    
         margin: 10px auto;
         width: 100%;
+        min-height: 500px;
     }
     
     #main ul {
@@ -305,11 +478,38 @@ h1, h2, h3, h4, h5, h6 {
         overflow-x: hidden;
     }
     
+    #main .container .row:first-child {
+        padding: 0;
+        margin: 0;
+    }
+    
+    /****----- Feedback Section -----****/
+    .feedback h2 {
+        color: #fff;
+        font: 300 36px/48px "Ubuntu", sans-serif;
+    }
+    
+    .feedback-group {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        
+        padding: 15px;
+    }
+    
+    .feedback-group > * {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    
+    
+    
+    
     .list-group-item-heading h1 {
         padding-bottom: 20px;
         border-bottom: 1px solid #e69e00;
 /*        border-bottom: 1px solid #b69d6a;*/
-
     }
     
     #main li {
@@ -381,17 +581,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.5em;
     }
     
-    .return-top:hover {
-        background-color: aqua;
-        text-decoration-style: none;
-    }
-    
-    .return-top *{
-        text-decoration-style: none;
-    }
-    
     #pageBottom {
         margin-left: -15px;
+        padding: 25px;
     }
 }
 
