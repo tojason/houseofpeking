@@ -398,6 +398,10 @@ form > .btn:active:focus, form > .btn:focus{
     
     #middle {
         display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
     
@@ -426,15 +430,15 @@ form > .btn:active:focus, form > .btn:focus{
     }
     
     #top {
-        display: flex;
         display: -webkit-flex;
+        display: flex;
     }
     
     #nav-wrap {
-        align-self: center;
         -webkit-align-self: center;
-        display: flex;
+        align-self: center;
         display: -webkit-flex;
+        display: flex;
     }
     
     #nav-wrap ul {
