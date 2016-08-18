@@ -1,6 +1,9 @@
 body {
     background: black;
     background-image: url('http://i.imgur.com/f0RMe3W.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 /*    background-image: url(/img/background2.jpg);*/
 }
 
