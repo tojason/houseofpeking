@@ -43,8 +43,8 @@ a:focus, a:hover {
     font-family: "Ubuntu", sans-serif;   
 }
 
-#navigationmenu a {
-    /*    color: white;    */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #1e1e1e;
 }
 
 /****----- Middle Part -----****/
@@ -601,9 +601,13 @@ form > .btn:active:focus, form > .btn:focus{
         display: -webkit-flex;
         -webkit-flex-flow: column;
     }
-
+    
     #nav-wrap {
         -webkit-align-self: center;
+        align-self: center;
+        
+        z-index: 999;
+        background-color: #1e1e1e;
     }
     
     #main {
