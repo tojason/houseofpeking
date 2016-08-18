@@ -2,7 +2,6 @@ body {
     background: black;
     background-image: url('http://i.imgur.com/f0RMe3W.jpg');
 /*    background-image: url(/img/background2.jpg);*/
-    
 }
 
 #main h2, #main h5 {
@@ -27,7 +26,7 @@ a:focus, a:hover {
 */
 
 #top {
-    background-color: black;
+    background-color: #1e1e1e;
 }
 
 #logo {
@@ -382,7 +381,7 @@ form > .btn:active:focus, form > .btn:focus{
     
     #nav-wrap {
         z-index: 999;
-        background-color: black;
+        background-color: #1e1e1e;
     }
     
     #navigationmenu {
