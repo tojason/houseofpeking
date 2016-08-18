@@ -289,7 +289,7 @@ a:focus, a:hover {
 }
 
 #lunch-special > li+li {
-    border: 2px dashed rgb(255, 255, 128);
+    border: 2px dashed lightgray;
 }
 
 .extra {
